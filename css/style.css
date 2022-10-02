@@ -7,6 +7,7 @@
   --bckg-secondary: #f5f4fa;
   --bckg-dark: #2f303a;
   --bckg-button: #f5f4fa;
+  --icon-not-active: #afb1b8;
   --portfolio-gallery-row-count: 3;
   --portfolio-gallery-last-row-count: 3;
   --portfolio-gallery-margin-width: 30px;
@@ -332,12 +333,79 @@ body {
 }
 .command-text {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--color-secondary);
+}
+
+.socials {
+  padding: 0;
+  margin: 0;
+
+  width: 206px;
+  margin-right: auto;
+  margin-left: auto;
+
+  /* outline: solid teal 1px; */
+}
+
+.socials .list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  border: none;
+  align-content: center;
+  list-style: none;
+}
+
+.socials .list .item {
+  padding: 0;
+  margin: 0;
+  border: none;
+  border: 0;
+  box-shadow: none;
+  border-radius: 0;
+}
+.socials .list .item + .item {
+  margin-left: 10px;
+}
+
+.link {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+
+  /* outline: solid #000000 1px; */
+}
+.socials .link:hover {
+  background-color: var(--color-accent);
+}
+.socials .link:hover .icon,
+.socials .link:focus .icon {
+  fill: #ffffff;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--icon-not-active);
+  /* outline: solid gray 1px; */
+}
+
+/* Clients Section*/
+
+/* Logos Container */
+.logos {
+  padding-left: 215px;
+  padding-right: 215px;
 }
 
 /* Footer section */
